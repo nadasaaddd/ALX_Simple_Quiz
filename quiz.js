@@ -5,7 +5,7 @@ function checkAnswer() {
   // Get the user's answer and store it in userAnswer
   let userAnswer = selectedRadio ? selectedRadio.value : null;
 
-  if (userAnswer == correctAnswer) {
+  if (userAnswer === correctAnswer) {
     document.getElementById("feedback").textContent = "Correct! Well done.";
   } else {
     document.getElementById("feedback").textContent =
